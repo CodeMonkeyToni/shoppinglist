@@ -1,38 +1,91 @@
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.site {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  width: 100%;
+  max-width: 320px;
+  height: fit-content;
+  border: 4px solid #2b283a;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  user-select: none;
+}
+
+.image {
+  width: 70px;
+  height: 70px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.input-field {
+  width: 200px;
+  height: 35px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #dfe6ee;
+  border: 1px solid #dfe6ee;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+.input-field:focus {
+  outline: 2px solid gray;
+}
+
+.add-button {
+  width: 200px;
+  height: 35px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #b15164;
+  border: 1px solid #b15164;
   color: white;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.add-button:active {
+  outline: 2px solid gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 40px;
+  max-width: 280px;
+}
+
+.item {
+  height: 30px;
+  background-color: #FFFDF8;
+  border: 1px solid #FFFDF8;
+  box-shadow: 1px 1px 4px gray;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-grow: 1;
+  cursor: pointer;
+  text-align: center;
+}
+
+.item:active {
+  outline: 2px solid gray;
 }
