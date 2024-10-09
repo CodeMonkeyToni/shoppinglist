@@ -58,7 +58,7 @@ const items = shoppingList.map(item => {
       <div className="main">
         <img src={cart} alt="" className="image" />
         <input className="input-field" onChange={handleChange} value={itemToBeAdded} type="text" placeholder="Bread"></input>
-        <button className="add-button" onClick={addToCart}>Add to cart</button>
+        <button className="add-button" onClick={addToCart}>Lisää</button>
         <div className="item-list">
           {items}
         </div>
